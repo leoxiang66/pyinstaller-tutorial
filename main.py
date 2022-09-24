@@ -1,4 +1,10 @@
-from mainpackage import user_interaction
+from gui import MyWindow_UI
+from PyQt6 import QtWidgets
+
 
 if __name__ == '__main__':
-    user_interaction()
+    app = QtWidgets.QApplication([])
+
+    window = MyWindow_UI()
+    window.show()
+    app.exec()
